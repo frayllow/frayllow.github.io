@@ -1,0 +1,159 @@
+body {
+    background-color: #EFDAD3; 
+    color: #8D6C9F;
+    /*overflow: hidden; for media query i think never mind na lang*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    top: 0;
+}
+
+header nav ul li:hover {
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    header nav ul {
+        left: -1em;
+        top: -0.5em;
+    }
+    #ad {
+        max-width: 300px;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1050px) {
+    header nav ul {
+        left: -3em;
+        top: -0.5em;
+    }
+}
+
+
+header nav ul li {
+    list-style: none;
+    margin: 1em auto;
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #8D6C9F;
+    font-size: max(1.1vw, 0.67em);
+}
+
+header nav ul li a img {
+    width: 80%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 1em auto -1em;
+}
+
+main {
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 7%;
+}
+
+main hr:first-of-type {
+    margin-top: -9px;
+}
+
+main hr {
+    border: 0;
+}
+
+main .page:first-of-type{
+    margin: 10.5em auto 15em;
+}
+
+main .page:first-of-type article p {
+    text-indent: 0;
+}
+
+main .page {
+    border: 2.5px solid #9E7FA6;
+    margin: 3.5em auto 15em;
+    border-radius: 12px;
+    background-color: #fef6ef;
+    box-shadow: 5px 5px #9E7FA6;
+    max-width: 800px;
+    min-width: 200px;
+    font-size: max(1.1vw, 0.8em);
+    
+}
+
+main .page:last-of-type {
+    margin: 3.5em auto 17em;
+}
+
+main .page article header {
+    margin-top: -1em;
+    font-size: max(1vw, 0.67em);
+    text-align: right;
+}
+
+main .page article h1:first-of-type {
+    font-size: max(2.5vw, 1.3em);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .page article {
+    padding: 1.5em;
+}
+
+main .page article p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+#ad {
+    z-index: 3;
+    border: 2.5px solid #9E7FA6;
+    border-radius: 12px;
+    background-color: #fef6ef;
+    box-shadow: 5px 5px #9E7FA6;
+    position: fixed;
+    top: 70%;
+    left: 60%;
+    margin-right: 5%;
+    min-width: 120px;
+    height: auto;
+}
+
+
+#ad article {
+    font-size: max(1vw, 0.67em);
+    padding: 0 1em 1em;
+}
+
+@media (max-width: 500px) {
+    #ad {
+        bottom: 3%;
+    }
+    header nav ul {
+        line-height: 0.8;
+    }
+}
+
+#ad article a {
+    text-decoration: none;
+    color: #8D6C9F;
+    font-weight: 600;
+}
+
+#ad article a:hover {
+    color: black;
+}
+
