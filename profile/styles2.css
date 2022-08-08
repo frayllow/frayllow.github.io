@@ -1,0 +1,96 @@
+* {
+    background-size: 400px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 100%;
+}
+
+body {
+    background-image: url("bg4.png");
+    color: #c29200;
+}
+
+header > div {
+    display: flex;
+    margin: 3em auto 0;
+    align-items: center;
+}
+
+header > div, main {
+    background-color: #fffccd;
+    width: 80%;
+    max-width: 550px;
+    min-width: 350px;
+    border: 6px solid #d8b863;
+    justify-content: space-evenly;
+    border-radius: 27px;
+}
+
+header > div > h1 {
+    font-style: italic;
+}
+
+header > div > .box {
+    background-color: white;
+    padding: 0.4em max(5vw, 2em);
+    border-radius: 27px;
+}
+
+header > div > .box > a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    color: #c29200;
+}
+
+header > div > h1, header > div > a {
+    line-height: 25%;
+}
+
+main {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    margin: 1em 25px;
+}
+  
+.column {
+    flex: 50%;
+}
+
+.name {
+    font-weight: bold;
+    line-height: 0%;
+    padding: 0 0.75em;
+}
+
+.subtitle {
+    font-size: max(1vw, 0.75em);
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 27px;
+    border: 2px solid #d8b863;
+}
+
+@media (max-width: 600px){
+    .photo {
+        width: 100%;
+    }
+}
+
+p {
+    font-size: max(1.25vw, 0.9em);
+    padding: 0 0.75em;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 35px;
+}

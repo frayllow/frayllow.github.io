@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles2.css" rel="stylesheet">
+        <title>trial</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">column 1</div>
+            <div class="column">column 2</div>
+        </div>
+    </body>
+</html>
