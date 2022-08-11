@@ -3,27 +3,68 @@
 }
 
 body {
-    display: grid;
+    min-width: 450px;
     margin: 0;
-    
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 1fr) minmax(2rem, 1fr) ;
+
+}
+
+header nav ul {
+    display:grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    position: fixed;
+    background-color: #9CBEA3;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-top: 0;
+    padding: 0.65em;
+    z-index: 1;
+}
+
+header nav ul li:first-of-type {
+    font-style: italic;
+    margin-top: -5px;
+    margin-left: 1em;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header nav ul li {
+    list-style: none;
+    letter-spacing: 2.5px;
+    /*  */
+    
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li img {
+    width: 20px;
+    margin-top: -2px;;
 }
 
 body section {
-    padding: 2em 3em;
+    padding: 2em;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body section:not(:last-of-type) {
+    height: 100vh;
 }
 
 #title {
     background-color: #9CBEA3;
     text-align: center;
-    padding: 2em;
-    display: grid;
-    grid-column: 1/-1;
 }
 
 #title h1 {
@@ -35,15 +76,14 @@ body section {
 }
 
 #title img {
-    width: 40em;
+    width: 37em;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 1.25em auto 0;
 }
 
 #features {
     background-color: #F7E3B1;
     display: grid;
-    grid-column: 1/-1;
     grid-template-columns: 2fr 1.5fr;
     align-items: center;
 }
@@ -52,15 +92,19 @@ body section {
     list-style: none;
 }
 
+#features div video {
+    width: 40em;
+}
+
 #artist {
     background-color: #E3957E;
     display: grid;
-    grid-column: 1/-1;
     grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2em;
 }
 
 #artist img {
-    width: 250px;
+    width: 265px;
     height: auto;
     border-radius: 200px;
 }
@@ -82,11 +126,8 @@ body section {
 #merch {
     background-color: #FAF0DC;
     display: grid;
-    grid-column: 1/-1;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    justify-items: center;
-    
 }
 
 .item {
@@ -102,11 +143,81 @@ body section {
 }
 
 .item p {
-    padding: 0 1em;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    #features div video{
+        width: 35em;
+    }
+    #features {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    #merch {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #merch {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media only screen and (max-width: 720px) {
-    #features, #artist {
-      grid-template-columns: 1fr;
+    #title div {
+        padding-top: 5em;
     }
-  }
+    .item {
+        width: 149px;
+        height: 230px;
+    }
+    .item img {
+        height: 181px;
+    }
+    #title img , #features div video{
+        width: 30em;
+    }
+    .social-icons {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 2rem;
+    }
+    #artist img {
+        width: 235px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header nav ul li {
+        justify-items: center;
+        font-size: small;
+        letter-spacing: 1px;
+    }
+    .item {
+        width: 129px;
+        height: 200px;
+    }
+    #merch {
+        gap: 0.25rem;
+    }
+    .item img {
+        height: 157px;
+    }
+    main {
+        font-size: small;
+    }
+    .social-icons {
+        font-size: 1rem;
+    }
+    #artist img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #artist h3 {
+        text-align: left;
+    }
+}
