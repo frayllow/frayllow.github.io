@@ -45,6 +45,10 @@ header nav ul li a{
     text-decoration: none;
 }
 
+header nav ul li a:hover {
+    color: #FAF0DC;
+}
+
 header nav ul li img {
     width: 20px;
     margin-top: -2px;;
