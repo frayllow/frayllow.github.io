@@ -1,0 +1,405 @@
+:root {
+    
+}
+
+*, ::before, ::after {
+    margin: 0;
+}
+
+body {
+    background-color: #b6c0d2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 6.5em;
+    padding-top: 2.5vh;
+}
+
+p {
+    font-size: small;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+img:hover {
+    border: 1.5px solid whitesmoke;
+}
+
+#top {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.menu {
+    padding: 3em;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.menu:last-of-type {
+    grid-column: 3;
+}
+
+.proj {
+    padding: 0.5em;
+    justify-items: end;
+    height: 25vh;
+}
+
+.some-text {
+    height: 130px;
+    padding-bottom: 2em;
+}
+
+.buttons, .buttons-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.proj a img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+#menu-2 {
+    text-align: right;
+}
+
+#avatar {
+    text-align: center;
+    margin: 1em -3em;
+    grid-column: 2;
+    justify-content: center;
+}
+
+#second {
+    background-color: pink;
+    height: 100vh;
+}
+
+.puppy {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-top: -7px;
+    z-index: 4;
+    position: relative;
+    transition: transform 1s ease-in-out 0ms;
+  }
+  
+  .puppy * {
+    position: absolute;
+  }
+  
+  .puppy:active {
+    transform: scale(1.2);
+    cursor: not-allowed;
+  }
+  
+  .puppy-head {
+    width: 50%;
+    height: 45%;
+    background: #e79e51;
+    border-radius: 50%;
+    top: 10%;
+    left: 25%;
+    z-index: 2;
+  }
+  
+  .ear {
+    width: 27%;
+    height: 70%;
+    background-color: #eeaf59;
+    border-radius: 120% 60% 60% 120%;
+    top: 10%;
+  transform-origin: top;
+  }
+  
+  .ear.left {
+    left: -5%;
+    transform: rotate(5deg);
+    animation: 2s linear infinite emove1;
+  }
+  
+  .ear.right {
+    right: -5%;
+    transform: rotate(-5deg) scaleX(-1);
+    animation: 2s linear infinite emove2;
+  }
+
+  .eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top: 47%;
+    border-radius: 50%;
+  }
+  
+  .eye.left {
+    left: 25%;
+  }
+  
+  .eye.right {
+    right: 25%;
+  }
+  
+  .eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: #e79e51;
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
+  }
+  
+  .blush {
+    width: 15%;
+    height: 10%;
+    background-color: pink;
+    top: 55%;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  
+  .blush.left {
+    left: 15%;
+  }
+  
+  .blush.right {
+    right: 15%;
+  }
+  
+  .nose {
+    height: 10%;
+    width: 14%;
+    background-color: black;
+    border-radius: 50%;
+    top: 60%;
+    left: 43%;
+  }
+  
+  .mouth {
+    height: 14%;
+    width: 18%;
+    border-bottom: 3.5px solid black;
+    border-radius: 50%;
+    top: 67%;
+  }
+
+  .mouth.left {
+    left: 32.7%;
+    transform: rotate(-32deg);
+  }
+
+  .mouth.right {
+    right: 32.7%;
+    transform: rotate(32deg);
+  }
+
+  .chest {
+    width: 43%;
+    height: 45%;
+    background: #e79e51;
+    border-radius: 80% 80% 100% 100%;
+    top: 45%;
+    left: 28.5%;
+    z-index: 1;
+  }
+
+  .chest::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 55%;
+    background-color: #df8c44;
+    border-radius: 80% 80% 100% 100%;
+    top: -10%;
+    left: 20%;
+  }
+
+  .ffoot {
+    width: 28%;
+    height: 75%;
+    background-color: #e79e51;
+    border-radius: 0% 0% 80% 80%;
+    top: 70%;
+  }
+
+  .ffoot.left {
+    left: 11%;
+    transform: rotate(-9deg);
+  }
+
+  .ffoot.right {
+    right: 11%;
+    transform: rotate(9deg);
+  }
+
+  .ftoe {
+    width:  17%;
+    height: 25%;
+    background-color: #e79e51;
+    top: 127%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .ftoe.left {
+    left: 15%;
+    transform: rotate(72deg);
+  }
+  
+  .ftoe.right {
+    right: 15%;
+    transform: rotate(-72deg);
+  }
+  
+  .booty {
+    width: 53%;
+    height: 45%;
+    background: #df8c44;
+    border-radius: 80% 80% 100% 100%;
+    top: 60%;
+    left: 23.5%;
+  }
+  
+  .tail {
+    top: 75%;
+    left: 8%;
+    width: 30%;
+    height: 65%;
+    background: #eeaf59;
+    border-radius: 15% 30% 30% 120%;
+    transform-origin: top left; 
+    transform: rotate(130deg) scaleX(-1);
+    animation: 6s linear infinite wag;
+    z-index: -1;
+  }
+  
+  @keyframes wag {
+    50% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    60% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+    70% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    80% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+    90% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    100% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+  }
+
+  @keyframes emove1 {
+    10% {
+      transform: rotate(8deg);
+    }
+    20% {
+      transform: rotate(5deg);
+    }
+    30% {
+      transform: rotate(8deg);
+    }
+    40% {
+      transform: rotate(5deg);
+    }
+  }
+  
+  @keyframes emove2 {
+    10% {
+      transform: rotate(-8deg) scaleX(-1);
+    }
+    20% {
+      transform: rotate(-5deg)  scaleX(-1);
+    }
+    30% {
+      transform: rotate(-8deg)  scaleX(-1);
+    }
+    40% {
+      transform: rotate(-5deg)  scaleX(-1);
+    }
+  }
+
+  .foot {
+    width:  15%;
+    height: 30%;
+    background-color: #df8c44;
+    top: 75%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .foot.left {
+    left: 10%;
+    transform: rotate(80deg);
+  }
+  
+  .foot.right {
+    right: 10%;
+    transform: rotate(-80deg);
+  }
+
+@media (max-width: 840px) { /*i gave up with centering this shit putangina*/
+  .puppy {
+    width: 325px;
+    height: 325px;
+  }
+
+  #avatar {
+    grid-column: 1/3;
+  }
+
+  .menu{
+    margin-top: 1em;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .menu:last-of-type {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #menu-2 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .puppy {
+    width: 310px;
+    height: 310px;
+  }
+
+  #avatar {
+    grid-column: 2;
+  }
+
+  .menu{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .menu:last-of-type {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  #menu-2 {
+    text-align: left;
+  }
+}
