@@ -1,0 +1,85 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #e8f3db;
+    color: #256100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: small;
+	min-width: 400px;
+    max-width: 600px;
+}
+
+h1, p {
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 36px;
+}
+
+p {
+    font-size: small;
+    margin: 0 5em;
+    font-style: italic;
+}
+
+form {
+    padding-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#head {
+    margin-top: 2em;
+}
+
+fieldset {
+    background-color: #e8f3db;
+    margin: 0 4em;
+    border-top: 0;
+    border-color: #abfe78;
+    border-width: thin;
+}
+
+#cos {
+    margin-top: 2em;
+}
+
+#submit {
+    display: block;
+    width: 30%;
+    margin: 2em auto;
+    height: 2em;
+    border-color: #256100;
+    border-width: thin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #256100;
+    font-weight: bold;
+}
+
+input, textarea, #dropdown {
+    margin: 1px 0 0 0;
+    width:97%;
+    min-height: 1.5em;
+    background-color: #e8f3db;
+    border: 1px solid #e8f3db;
+    color: #256100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}

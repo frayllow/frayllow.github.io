@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClimaX PH</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <fieldset id="head">
+        <h1>ClimaX PH</h1>
+        <p>How are you faring CliMate? We just want to know your thoughts on our org :)</p>
+        </fieldset>
+        
+        <form id="survey-form">
+        
+            <fieldset>
+                <label class="title">I N F O</label>
+                <label id="name-label">Name: <input type="text" minlength="2" id="name" placeholder="e.g. Juan D. Cruz" required></label>
+                <label id="email-label">E-mail: <input type="email" id="email" placeholder="e.g. Juan23@climax.org" required></label>
+                <label id="number-label">Age: <input type="number" id="number" min="8" max="120" placeholder="--- in years pleasee" required></label>
+            
+                <label>Which committee do you belong to?
+                    <select id="dropdown" required>
+                        <option value="">Select one</option>
+                        <option value="1">Creatives</option>
+                        <option value="2">Marketing</option>
+                        <option value="3">Partnerships</option>
+                        <option value="4">Project Coordination</option>
+                        <option value="5">Research</option>
+                        <option value="6">Writing</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label class="title">S O C I A L S</label>
+                <label>How updated are you on the social media of ClimaX PH?</label>
+                <label><input type="radio" name="updt" class="inline" value="a0"> 1</label>
+                <label><input type="radio" name="updt" class="inline" value="b0"> 2</label>
+                <label><input type="radio" name="updt" class="inline" value="c0"> 3</label>
+                <label><input type="radio" name="updt" class="inline" value="d0"> 4</label>
+                <label><input type="radio" name="updt" class="inline" value="e0"> 5</label>
+            </fieldset>
+
+            <fieldset>
+                <label class="title">F U T U R E</label>
+                <label>Which of these activities do you want ClimaX PH to do in the future?</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="a"> Tree Planting</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="b"> Coastal Cleanup</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="c"> Gig Fundraiser</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="d"> Webinar</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="e"> Art Festival</label>
+                <label><input type="checkbox" name="actvt" class="inline" value="f"> Other</label>
+
+                <label id="cos">Any more comments or suggestions?
+                    <textarea rows="5" cols="30" placeholder="We'd appreciate it if you share your thoughts <3"></textarea>
+                </label>
+
+            </fieldset>
+            
+                <input type="submit" id="submit" value="S U B M I T" />
+
+        </form>
+    </body>
+</html>
