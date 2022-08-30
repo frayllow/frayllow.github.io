@@ -16,10 +16,15 @@
   src: url(MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf);
 }
 
+@font-face {
+  font-family: special2;
+  src: url(MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf);
+}
+
 body {
     background-color: #b6c0d2;
     color: #253559;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: special2, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
