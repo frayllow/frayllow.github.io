@@ -38,11 +38,10 @@ nav ul li .long {
 }
 
 nav ul li a:hover {
-    /*background-color: black;
-    color: #e7dabf;
-    outline: 1.2px solid white;*/
     font-weight: 600;
 }
+
+/*adding nav element to show which nav im currently on*/
 
 #pic {
     width: 60vh;
