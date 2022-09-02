@@ -146,4 +146,25 @@ h1, .flower1, .flowerepi, .lflowers {
     .Rdrest p {
         text-align: center;
     }
+    
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 7em;
+    }
+    p {
+        font-size: 13px;
+    }
+    .lflowers {
+        height: 300px;
+        margin-left: -2.5em;
+        margin-bottom: 0.3em;
+    }
+    .flowerepi {
+        width: 180px;
+    }
+    .flower1 {
+        width: 220px;
+    }
 }
