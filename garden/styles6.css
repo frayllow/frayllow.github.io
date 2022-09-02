@@ -3,6 +3,8 @@ body {
     font-family:'Times New Roman', Times, serif ;
 }
 
+/*i want to align the mfking content in the middle but i give up*/
+
 @font-face {
     font-family: garden;
     src: url(/font/Carola.otf);
@@ -129,6 +131,12 @@ h1, .flower1, .flowerepi, .lflowers {
 @keyframes float {
     50% {
         transform: translate(0px,20px);
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        overflow: hidden;
     }
 }
 
