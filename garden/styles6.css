@@ -60,10 +60,10 @@ h1 {
     text-align: center;
     font-size: 9em;
     line-height: 0.75em;
-    font-family: garden;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     letter-spacing: 3px;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 #subtitle {
@@ -132,6 +132,12 @@ h1, .flower1, .flowerepi, .lflowers {
     }
 }
 
+@media (max-width: 920px) {
+    h1 {
+        font-size: 7em;
+    }
+}
+
 @media (max-width: 720px) {
     .cols2 {
         grid-template-columns: 1fr;
@@ -148,11 +154,14 @@ h1, .flower1, .flowerepi, .lflowers {
     nav ul li a {
         font-size: 12px;
     }
+    h1 {
+        font-size: 6em;
+    }
 }
 
 @media (max-width: 520px) {
     h1 {
-        font-size: 6em;
+        font-size: 3.7em;
     }
     p {
         font-size: 13px;
