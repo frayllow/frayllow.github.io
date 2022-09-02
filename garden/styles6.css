@@ -151,10 +151,14 @@ h1, .flower1, .flowerepi, .lflowers {
 
 @media (max-width: 520px) {
     h1 {
-        font-size: 7em;
+        font-size: 6em;
     }
     p {
         font-size: 13px;
+    }
+    #pic {
+        width: 42vh;
+        height: 50vh;
     }
     .lflowers {
         height: 300px;
